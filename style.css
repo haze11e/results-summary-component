@@ -1,0 +1,158 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-size: 14px;
+    font-family: 'Hanken Grotesk', sans-serif;
+}
+
+.card-header {
+    text-align: center;
+    padding: 32px 64px;
+    border-radius: 0px 0 28px 28px;
+    background: linear-gradient(to bottom, hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+}
+
+.header-title{
+    color: hsl(221, 100%, 96%);
+    font-weight: 500;
+}
+
+.badge-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem 0;
+}
+
+.badge-circle{
+    width: 114px;
+    height: 114px;
+    border-radius: 50%;
+    padding: 22px;
+    background: linear-gradient(to bottom,hsla(256, 72%, 46%, 1), hsla(241, 72%, 46%, 0));
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.status-title{
+    margin: 8px 0;
+    color: white;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.score-value{
+    font-weight: 800;
+    color: white;
+    font-size: 46px;
+}
+
+.score-label{
+     color: hsla(241, 100%, 89%, 0.5);
+}
+
+.status-description{
+    color: hsl(241, 100%, 89%);
+}
+
+.list-container{
+    padding: 24px 24px 8px 24px;
+}
+
+.list-title{
+    color:hsl(224, 30%, 27%);
+    margin-bottom: 24px;
+}
+
+.list{
+    list-style: none;
+    padding-left: 0;
+}
+
+.item{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 14px;
+    border-radius: 8px;
+    margin: 8px 0;
+}
+
+.item-info{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+}
+
+.value{
+    color: hsl(224, 30%, 27%);
+}
+.max{
+    color:hsla(224, 30%, 27%, 0.5);
+}
+.label-reaction{
+    color: hsl(0, 100%, 67%);
+}
+
+.label-memory{
+    color: hsl(39, 100%, 56%);
+}
+
+.label-verbal{
+    color: hsl(166, 100%, 37%);
+}
+
+.label-visual{
+    color: hsl(234, 85%, 45%);
+}
+
+.item-reaction{
+    background-color: hsla(0, 100%, 67%, 0.05);
+}
+
+.item-memory{
+    background-color: hsla(39, 100%, 56%, 0.05);
+}
+
+.item-verbal{
+    background-color: hsla(166, 100%, 37%, 0.05);
+}
+
+.item-visual{
+    background-color: hsla(234, 85%, 45%, 0.05);
+}
+
+.card-footer{
+    padding: 0 26px;
+}
+
+.btn-continue{
+    padding: 14px;
+    border-radius: 50px;
+    border: none;
+    width: 100%;
+    background: hsl(224, 30%, 27%);
+    color: white;
+    transition: background-color 0.3s;
+}
+
+.btn-continue:hover{
+    background: linear-gradient(to bottom, hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+}
+
+.attribution {
+    font-size: 11px; 
+    text-align: center;
+    margin: 32px 0;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%); 
+}
