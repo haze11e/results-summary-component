@@ -7,6 +7,28 @@
 body{
     font-size: 14px;
     font-family: 'Hanken Grotesk', sans-serif;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(0, 0%, 98%);
+}
+
+main {
+    width: 100%;
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    width: 100%;
+    max-width: 100%;
+    background: white;
+    display: flex;
+    flex-direction: column;
 }
 
 .card-header {
@@ -59,15 +81,25 @@ body{
 
 .status-description{
     color: hsl(241, 100%, 89%);
+    padding: 0 8px;
+}
+
+.card-body {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
 }
 
 .list-container{
-    padding: 24px 24px 8px 24px;
+    padding: 24px 24px 16px 24px;
+    flex: 1;
 }
 
 .list-title{
     color:hsl(224, 30%, 27%);
-    margin-bottom: 24px;
+    margin-bottom: 20px;
+    font-size: 18px;
+    font-weight: 700;
 }
 
 .list{
@@ -79,9 +111,9 @@ body{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 14px;
-    border-radius: 8px;
-    margin: 8px 0;
+    padding: 16px;
+    border-radius: 12px;
+    margin: 12px 0;
 }
 
 .item-info{
@@ -93,24 +125,31 @@ body{
 
 .value{
     color: hsl(224, 30%, 27%);
+    font-weight: 700;
 }
+
 .max{
     color:hsla(224, 30%, 27%, 0.5);
 }
+
 .label-reaction{
     color: hsl(0, 100%, 67%);
+    font-weight: 500;
 }
 
 .label-memory{
     color: hsl(39, 100%, 56%);
+    font-weight: 500;
 }
 
 .label-verbal{
     color: hsl(166, 100%, 37%);
+    font-weight: 500;
 }
 
 .label-visual{
     color: hsl(234, 85%, 45%);
+    font-weight: 500;
 }
 
 .item-reaction{
@@ -130,17 +169,20 @@ body{
 }
 
 .card-footer{
-    padding: 0 26px;
+    padding: 16px 24px 24px 24px;
 }
 
 .btn-continue{
-    padding: 14px;
-    border-radius: 50px;
+    padding: 16px;
+    border-radius: 32px;
     border: none;
     width: 100%;
     background: hsl(224, 30%, 27%);
     color: white;
-    transition: background-color 0.3s;
+    font-size: 16px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: background 0.3s;
 }
 
 .btn-continue:hover{
@@ -150,9 +192,71 @@ body{
 .attribution {
     font-size: 11px; 
     text-align: center;
-    margin: 32px 0;
+    padding: 16px;
 }
 
 .attribution a {
     color: hsl(228, 45%, 44%); 
+}
+
+@media (min-width: 768px){
+    .card {
+        flex-direction: row;
+        max-width: 700px;
+        border-radius: 32px;
+        box-shadow: 10px 20px 50px hsla(224, 30%, 27%, 0.1);
+        overflow: hidden;
+    }
+    
+    .card-header {
+        flex: 1;
+        border-radius: 32px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 18px 18px;
+    }
+    
+    .card-body {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    
+    .badge-circle {
+        width: 120px;
+        height: 120px;
+    }
+    
+    .score-value {
+        font-size: 54px;
+    }
+    
+    .status-title {
+        font-size: 28px;
+        margin: 12px 0;
+    }
+    
+    .status-description {
+        font-size: 16px;
+        line-height: 1.4;
+    }
+    
+    .list-container {
+        padding: 38px 40px 20px 40px;
+    }
+    
+    .list-title {
+        font-size: 20px;
+    }
+    
+    .card-footer {
+        padding: 0 40px 38px 40px;
+    }
+    
+    .item {
+        padding: 16px 18px;
+        margin: 14px 0;
+    }
 }
